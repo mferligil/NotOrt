@@ -1,0 +1,37 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class NotOrt {
+    public static void main(String[] args) {
+        int mat,fiz,kim,tur,tar,muz ;
+        Scanner inp=new Scanner(System.in);
+        System.out.println("Matematik notunu girin:");
+        mat=inp.nextInt();
+
+        System.out.println("Fizik notunu girin:");
+        fiz=inp.nextInt();
+
+        System.out.println("Kimya notunu girin:");
+        kim=inp.nextInt();
+
+        System.out.println("Türkçe notunu girin:");
+        tur=inp.nextInt();
+
+        System.out.println("Tarih notunu girin:");
+        tar=inp.nextInt();
+
+        System.out.println("Müzik notunu girin:");
+        muz=inp.nextInt();
+        int top=(mat+fiz+kim+tur+tar+muz);
+        double ort=top/6.0;
+        System.out.println("Ortalamanız :" +ort);
+        boolean kosul1=ort>=60.0;
+        boolean sonuc = kosul1 ;
+        String str=sonuc ? "Sınıfı Geçti" : "Sınıfta Kaldı";
+        System.out.println(str);
+
+
+
+    }
+}
